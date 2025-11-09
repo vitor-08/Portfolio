@@ -10,11 +10,12 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body class="dark">
+    <!-- CABEÇALHO -->
     <header class="header">
         <div class="container header-content">
             <h1 class="logo"><CyberDev/></h1>
             
-            <!-- CABEÇALHO -->
+            <!-- COMPUTADOR -->
             <nav class="nav-desktop">
                 <button onclick="scrollToSection('home')" class="nav-link">Início</button>
                 <button onclick="scrollToSection('about')" class="nav-link">Sobre</button>
@@ -27,7 +28,25 @@
                 <button id="theme-toggle" class="theme-toggle">
                     <i data-lucide="moon" class="theme-icon"></i>
                 </button>
-            </header>
+                
+                <!-- BOTÃO MOBILE -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <i data-lucide="menu" class="mobile-menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE -->
+        <nav id="mobile-nav" class="nav-mobile">
+            <div class="nav-mobile-content">
+                <button onclick="scrollToSection('home')" class="nav-link-mobile">Início</button>
+                <button onclick="scrollToSection('about')" class="nav-link-mobile">Sobre</button>
+                <button onclick="scrollToSection('skills')" class="nav-link-mobile">Habilidades</button>
+                <button onclick="scrollToSection('projects')" class="nav-link-mobile">Projetos</button>
+                <button onclick="scrollToSection('contact')" class="nav-link-mobile">Contato</button>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <!-- APRESENTAÇÃO -->
@@ -423,7 +442,5 @@
             <div id="modal-links" class="modal-links"></div>
         </div>
     </div>
-
 </body>
-
 </html>
