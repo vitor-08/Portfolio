@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ti - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- Ícones -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="dark">
+    <!-- CABEÇALHO COM NAVEGAÇÃO -->
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo"><CyberDev/></h1>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <button onclick="scrollToSection('home')" class="nav-link">Início</button>
+                <button onclick="scrollToSection('about')" class="nav-link">Sobre</button>
+                <button onclick="scrollToSection('skills')" class="nav-link">Habilidades</button>
+                <button onclick="scrollToSection('projects')" class="nav-link">Projetos</button>
+                <button onclick="scrollToSection('contact')" class="nav-link">Contato</button>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i data-lucide="moon" class="theme-icon"></i>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn">
+                    <i data-lucide="menu" class="mobile-menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-nav" class="nav-mobile">
+            <div class="nav-mobile-content">
+                <button onclick="scrollToSection('home')" class="nav-link-mobile">Início</button>
+                <button onclick="scrollToSection('about')" class="nav-link-mobile">Sobre</button>
+                <button onclick="scrollToSection('skills')" class="nav-link-mobile">Habilidades</button>
+                <button onclick="scrollToSection('projects')" class="nav-link-mobile">Projetos</button>
+                <button onclick="scrollToSection('contact')" class="nav-link-mobile">Contato</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- APRESENTAÇÃO -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-icons">
+                    <i data-lucide="shield" class="hero-icon"></i>
+                    <i data-lucide="terminal" class="hero-icon"></i>
+                    <i data-lucide="lock" class="hero-icon"></i>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="text-green">Técnico em Informática</span>
+                    <br>
+                    <span class="hero-subtitle">Developer</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Técnico de Infármatica. Estudando para adquirir mais conhecimento.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('projects')" class="btn-primary">
+                        Ver Projetos
+                    </button>
+                    <button onclick="scrollToSection('contact')" class="btn-secondary">
+                        Entre em Contato
+                    </button>
+                </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title"><span class="text-green">Sobre Mim</span></h2>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <i data-lucide="user" class="card-icon"></i>
+                            <h3>Perfil Profissional</h3>
+                        </div>
+                        
+                        <p class="card-description">
+                           Sou aluno do 2º ano do Cotemig e gosto bastante de programação, principalmente back-end.
+                           Tenho interesse em seguir na área de cibersegurança, sempre buscando aprender mais e melhorar
+                           minhas habilidades.
+                        </p>
+                        
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i data-lucide="briefcase" class="detail-icon"></i>
+                                <span>Cursando 2º ano no Cólegio Cotemig</span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-lucide="graduation-cap" class="detail-icon"></i>
+                                <span>Certificações em Ti  </span>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title"><span class="text-green">Habilidades</span></h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="shield" class="skill-icon"></i>
+                            <h3>Segurança</h3> <!-- Campo de habilidades voltadas para segurança cujo cursos ainda estão sendo concluidos -->
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item"> - - - - - - - - - - - - - - -</div>
+                            <div class="skill-item"> - - - - - - - - - - - - - - -</div>
+                            <div class="skill-item"> - - - - - - - - - - - - - - -</div>
+                            <div class="skill-item"> - - - - - - - - - - - - - - -</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="code" class="skill-icon"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item"> HTML</div>
+                            <div class="skill-item"> CSS</div>
+                            <div class="skill-item"> JavaScript</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="server" class="skill-icon"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item"> C#</div>
+                            <div class="skill-item"> Python</div>
+                            <div class="skill-item"> PHP</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="database" class="skill-icon"></i>
+                            <h3>Banco de Dados</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item"> MySQL</div>
+                            <div class="skill-item"> SQL</div>
+                            <div class="skill-item"> Modelagem ER</div>
+                            <div class="skill-item"> Normalização</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="lock" class="skill-icon"></i>
+                            <h3>Hard Skills</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item"> Conhecimento de hardware</div>
+                            <div class="skill-item"> Conhecimento de software</div>
+                            <div class="skill-item"> Sistemas operacionais</div>
+                            <div class="skill-item"> Ferramentas Google</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="eye" class="skill-icon"></i>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item"> Resolucçao de problemas</div>
+                            <div class="skill-item"> Trabalho em equipe</div>
+                            <div class="skill-item"> Pensamento crítico</div>
+                            <div class="skill-item"> Gestão de tempo</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications">
+                    <div class="certification-card">
+                        <h3 class="text-green">Certificações</h3> <!-- Campo reservado para certificações que ainda estão em andamento -->
+                        <div class="certification-grid">
+                            <div> - - - - - - - - - - - - - - -</div>
+                            <div> - - - - - - - - - - - - - - -</div>
+                            <div> - - - - - - - - - - - - - - -</div>
+                            <div> - - - - - - - - - - - - - - -</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title"><span class="text-green">Projetos</span> </h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card" onclick="openModal(1)">
+                        <i data-lucide="shield" class="project-icon"></i>
+                        <h3>- - - - - - - - - - - - - - - - - - -</h3>
+                        <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="" onclick="event.stopPropagation()">
+                                <i data-lucide="github"></i> GitHub
+                            </a>
+                            <a href="" onclick="event.stopPropagation()">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openModal(2)">
+                        <i data-lucide="globe" class="project-icon"></i>
+                        <h3>- - - - - - - - - - - - - - - - - - -</h3>
+                        <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="" onclick="event.stopPropagation()">
+                                <i data-lucide="github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openModal(3)">
+                        <i data-lucide="database" class="project-icon"></i>
+                        <h3>- - - - - - - - - - - - - - - - - - -</h3>
+                        <p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                            <span class="tech-tag">- - - - -</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="" onclick="event.stopPropagation()">
+                                <i data-lucide="github"></i> GitHub
+                            </a>
+                            <a href="" onclick="event.stopPropagation()">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="github-link">
+                    <a href="" class="btn-primary">
+                        <i data-lucide="github"></i>
+                        Ver Mais no GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title"><span class="text-green">Contato</span></h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Entre em Contato</h3>
+                        <p>Estou sempre aberto para discutir novas ideias de projeto e oportunidades de trabalho.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                                <div>
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">papinivitor08@icloud.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i data-lucide="phone" class="contact-icon"></i>
+                                <div>
+                                    <p class="contact-label">Telefone</p>
+                                    <p class="contact-value">(31) 98427-8047</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i data-lucide="map-pin" class="contact-icon"></i>
+                                <div>
+                                    <p class="contact-label">Localização</p>
+                                    <p class="contact-value">Belo Horizonte, MG - Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FORMULÁRIO -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome *</label>
+                                <input type="text" id="name" name="name" placeholder="Seu nome completo">
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefone *</label>
+                                <input type="text" id="phone" name="phone" placeholder="(11) 99999-9999" maxlength="15">
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com">
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary submit-btn">
+                                <i data-lucide="send"></i>
+                                Enviar Mensagem
+                            </button>
+                        </form>
+
+                        <div id="success-message" class="success-message" style="display: none;">
+                            <i data-lucide="check-circle" class="success-icon"></i>
+                            <h3>Mensagem Enviada!</h3>
+                            <p>Obrigado pelo seu contato. Retornarei em breve!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i data-lucide="shield" class="footer-logo-icon"></i>
+                        <h3><CyberDev/></h3>
+                    </div>
+                    <p>Técnico de Infármatica. 
+                    Estudando para adquirir mais conhecimento.</p>
+                    <div class="footer-social">
+                        <a href="" target="_blank">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="" target="_blank">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <div class="footer-links">
+                        <button onclick="scrollToSection('home')">Início</button>
+                        <button onclick="scrollToSection('about')">Sobre Mim</button>
+                        <button onclick="scrollToSection('skills')">Habilidades</button>
+                        <button onclick="scrollToSection('projects')">Projetos</button>
+                        <button onclick="scrollToSection('contact')">Contato</button>
+                    </div>
+                </div>
+                
+                <!-- INFORMAÇÕES DE CONTATO -->
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" class="footer-contact-icon"></i>
+                            <a href="">papinivitor08@icloud.com</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" class="footer-contact-icon"></i>
+                            <a href="">(31) 98427-8047</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="github" class="footer-contact-icon"></i>
+                            <a href="" target="_blank">GitHub Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Vítor Papini - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-wrapper">
+                    <i id="modal-icon" data-lucide="shield" class="modal-icon"></i>
+                    <h3 id="modal-title">Título do Projeto</h3>
+                </div>
+                <button id="modal-close" class="modal-close">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            
+            <p id="modal-description">Descrição do projeto...</p>
+            
+            <div id="modal-tech" class="modal-tech"></div>
+            
+            <div id="modal-links" class="modal-links"></div>
+        </div>
+    </div>
+
+</body>
+</html>
